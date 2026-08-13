@@ -23,3 +23,13 @@ export interface UserProfile {
 }
 
 export type CreateUserProfileInput = Omit<UserProfile, 'createdAt' | 'updatedAt'>
+
+export interface Note {
+  id: string
+  userId: string
+  title: string
+  content: string
+  createdAt: Timestamp
+  updatedAt: Timestamp
+  _schemaVersion: 1
+}
